@@ -1,0 +1,136 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+html{
+	font-family: "Ubuntu";
+}
+body{
+	margin:0px;
+	background-color: #fffffc;
+}
+.head{
+	font-size: 35px;
+	color: #7fdeff;
+	background-color: #36454f;
+	padding: 20px;
+}
+.head>img{
+	display: none;
+}
+.head>br{
+	display:none;
+}
+.titletoggle{
+	font-size: 35px;
+	color: #7fdeff;
+	transition: color 1s, font-size 1s;
+	cursor: pointer;
+}
+.titletoggle:hover{
+	color: #98ce00;
+	font-size: 40px;
+}
+.path{
+	font-size: 15px;
+	margin-bottom: : 8px;
+	padding:8px;
+	background-image: linear-gradient(to right,#7fdeff, #00cccc);
+}
+.buttons{
+	display: flex;
+	flex-wrap: wrap;
+}
+button{
+	text-decoration: none;
+	text-align: left;
+	font-size: 75%;
+	text-overflow: wrap;
+	width: 45vw;
+	border: 5px solid #0a2239;
+	padding: 20px;
+	padding-left: 10px;
+	color: #7fdeff;
+	background-color: #36454f;
+	margin: 8px;
+	word-wrap: break-word;
+	white-space: normal;
+	cursor: pointer;
+}
+.aboutheader{
+	background-color: #36454f;
+	font-size: 30px;
+	color: #7fdeff;
+	margin-bottom: 8px;
+}
+.aboutpara{
+	color: #0a2239;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.special{
+	font-style: italic;
+	color: #98ce00;
+}
+
+.aboutfooter{
+	color: #7fdeff;
+	background-color: #36454f;
+	font-size: 18px;
+}
+a{
+	text-decoration: none;
+	color:#0a2239;
+	text-decoration: underline;
+	text-decoration-color: #98ce00;
+	transition: background-color 1s;
+}
+a:hover{
+	background-color: #98ce00;
+}
+@media screen and (min-width: 768px)
+{
+	.ContentManager{
+		display: flex;
+		min-height: 100vh;
+	}
+	.head{
+		text-align: center;
+		padding-top: 35vh;
+	}
+	img{
+		padding: 0px;
+		margin: 0px;
+	}
+	.head>br{
+		display: inline;
+	}
+	.head>img{
+		display: inline;
+	}
+	.path{
+		border-radius: 30px;
+		width: 50vw;
+	}
+	.aboutheader{
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		display: inline-block;
+		padding-right: 8px;
+	}
+	.aboutpara{
+		font-size: 20px;
+		margin-left: 5vw;
+		width: 50vw;
+	}
+	.aboutfooter{
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+		display: inline-block;
+		padding-right: 8px;
+	}
+	button{
+		text-align: center;
+		font-size: 100%;
+		width: 20vw;
+		height: 20vw;
+	}
+}
